@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <title>NYAKA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="list.js"></script>
+</head>
+<body>
+    <header class="bg-danger text-white p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <font face="Comic sans MS"
+                    size="11" color="black">
+                    <strong>NYAKA</strong>
+                    <br>
+                    <strong>Beauty Bonanza Sale</strong>
+                
+                </font>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>All the Beauty Products at Lowest Price..Like Never Before !!!!!</h1>
+        <h2>Product List</h2>
+        <h3>Dig In</h3>
+        <table>
+            <th>
+                <img src="sugar lipstick.webp" alt="image-here" width="100px">
+                <img src="fit ma.jpg" alt="image-here" width="100px">
+                <img src="sunscreen.jpg" alt="image-here" width="100px">
+
+            </th>
+            <th>
+                <p>
+                    <ol type="1">
+                        1.SUGAR Lipstick <button type="button" onclick="buy()">Buy</button><br>
+                        2.Maybelline Fit Me Foundation <button type="button" onclick="buy()">Buy</button><br>
+                        3.Lakme Sunscreen <button type="button" onclick="buy()">Buy</button><br>
+                        4.NYAKA Primer <button type="button" onclick="buy()">Buy</button><br>
+                        5.Lakme 9to5 Compact <button type="button" onclick="buy()">Buy</button><br>
+                        6.SUGAR Bronzer <button type="button" onclick="buy()">Buy</button><br>
+                        
+                    </ol>
+                </p>
+            </th>
+
+            <th>
+                <img src="primer.jpg" alt="image-here" width="100px">
+                <img src="compact.jpg" alt="image-here" width="100px">
+                <img src="sugar bronzer.jpg" alt="image-here" width="100px">
+
+
+            </th>
+        </table>
+
+        <h2>What are you looking for? (TELL US)</h2>
+        <label id="lblsuccess" class="text-success" style="display: none"> </label>
+
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+
+                    <input type="text" onkeyup="toggleButton(this,'submit')"
+                    class="form-control" id="item">
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <input type="submit" class="btn btn-dark"
+                    id="submit" value="Submit" disabled>
+                </div>
+            </div>
+        </form>
+
+        <h3 class="mt-4">Items in your cart</h3>
+
+        <form id="addForm">
+            <ul class="List-group" id="items"></ul>
+        </form>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-danger text-white p-5">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" >
+                    
+                    <font faces="Comic sans MS"
+                    size="11" color="black">
+                    <strong>Happy Shopping</strong>
+                </font>
+                </div>
+             </div>
+        </div>
+    
+    </footer>
+    
+    
+</body>
+</html>
